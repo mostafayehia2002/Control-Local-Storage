@@ -4,6 +4,13 @@
     margin: 0px;
 }
 
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: oblique;
+
+}
+
 .container {
     width: 600px;
     margin: 40px auto;
@@ -11,14 +18,23 @@
     padding: 20px;
 }
 
-#input {
-    border: none;
-    padding: 15px;
-    margin-bottom: 15px;
+.inputs {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#input:focus {
+.input-key,
+.input-value {
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 48%;
+    border-radius: 5px;
+}
+
+input:focus {
     outline: none;
 }
 
@@ -50,6 +66,20 @@
 
 }
 
-.value {
-    display: block;
+table {
+    width: 100%;
+    border: 1px solid #009688;
+    border-spacing: 1px;
+    border-radius: 5px;
+}
+
+table thead {
+    background-color: #009688;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+table td {
+    border: 1px solid #009688;
+
 }
